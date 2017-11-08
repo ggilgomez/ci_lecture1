@@ -4,3 +4,7 @@
 *.dll
 *.exe
 .DS_Store
+/target/
+.classpath
+.projec
+.settings/
