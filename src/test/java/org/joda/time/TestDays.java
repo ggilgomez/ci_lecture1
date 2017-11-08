@@ -31,7 +31,7 @@ import junit.framework.TestSuite;
 public class TestDays extends TestCase {
     // Test in 2002/03 as time zones are more well known
     // (before the late 90's they were all over the place)
-    private static final DateTimeZone PARIS = DateTimeZone.forID("Europe/Paris");
+    private static final DateTimeZone PARIS = DateTimeZone.forID("UTC");
 
     public static void main(String[] args) {
         junit.textui.TestRunner.run(suite());

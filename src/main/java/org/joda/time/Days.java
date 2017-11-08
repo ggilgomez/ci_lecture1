@@ -116,7 +116,6 @@ public final class Days extends BaseSingleFieldPeriod {
      */
     public static Days daysBetween(ReadableInstant start, ReadableInstant end) {
         int amount = BaseSingleFieldPeriod.between(start, end, DurationFieldType.days());
-        amount++;
         return Days.days(amount);
     }
 
