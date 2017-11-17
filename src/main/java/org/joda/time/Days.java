@@ -136,6 +136,7 @@ public final class Days extends BaseSingleFieldPeriod {
             Chronology chrono = DateTimeUtils.getChronology(start.getChronology());
             int days = chrono.days().getDifference(
                     ((LocalDate) end).getLocalMillis(), ((LocalDate) start).getLocalMillis());
+            days = days * 2;
             return Days.days(days);
         }
         int amount = BaseSingleFieldPeriod.between(start, end, ZERO);
