@@ -29,5 +29,15 @@ public class TestCalculator {
 		//Should throw exception
 		assertEquals(0, calc.div(2, 0));
 	}
+	
+	@Test
+	public void testSum_div() {
+		assertEquals(1, calc.div(2, 2));
+	}
+	
+	@Test
+	public void testSum_sub_positives() {
+		assertEquals(0, calc.sub(2, 2));
+	}
 
 }
