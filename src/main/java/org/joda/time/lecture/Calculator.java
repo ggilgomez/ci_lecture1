@@ -15,6 +15,7 @@ public class Calculator {
 	}
 	
 	public int div(int x, int y) {
-		return x / y;
+		int a = x / y;
+		return a;
 	}
 }
