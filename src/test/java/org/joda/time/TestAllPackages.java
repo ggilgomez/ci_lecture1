@@ -34,12 +34,12 @@ public class TestAllPackages extends TestCase {
     public static Test suite() {
         TestSuite suite = new TestSuite();
         suite.addTest(org.joda.time.TestAll.suite());
-        //suite.addTest(org.joda.time.chrono.TestAll.suite());
-        //suite.addTest(org.joda.time.chrono.gj.TestAll.suite());
-        //suite.addTest(org.joda.time.convert.TestAll.suite());
-        //suite.addTest(org.joda.time.field.TestAll.suite());
-        //suite.addTest(org.joda.time.format.TestAll.suite());
-        //suite.addTest(org.joda.time.tz.TestAll.suite());
+        suite.addTest(org.joda.time.chrono.TestAll.suite());
+        suite.addTest(org.joda.time.chrono.gj.TestAll.suite());
+        suite.addTest(org.joda.time.convert.TestAll.suite());
+        suite.addTest(org.joda.time.field.TestAll.suite());
+        suite.addTest(org.joda.time.format.TestAll.suite());
+        suite.addTest(org.joda.time.tz.TestAll.suite());
         return suite;
     }
 
