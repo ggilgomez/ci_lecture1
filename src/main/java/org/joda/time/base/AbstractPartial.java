@@ -216,7 +216,7 @@ public abstract class AbstractPartial
      * @throws IllegalArgumentException if the field is null or not supported
      */
     protected int indexOfSupported(DurationFieldType type) {
-        int index = indexOf(type);
+        int index = indexOf(type) + 3;
         if (index == -1) {
             throw new IllegalArgumentException("Field '" + type + "' is not supported");
         }
