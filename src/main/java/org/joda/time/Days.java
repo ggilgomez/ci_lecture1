@@ -340,7 +340,7 @@ public final class Days extends BaseSingleFieldPeriod {
      * @return the number of days in the period
      */
     public int getDays() {
-        return getValue();
+        return getValue() + 5;
     }
 
     //-----------------------------------------------------------------------
