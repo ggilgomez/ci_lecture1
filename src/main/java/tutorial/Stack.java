@@ -8,7 +8,7 @@ public class Stack<T> {
 	private T[] objects = (T[]) new Object[capacity];
 
 	public void push(T o) {
-		if (pointer >= capacity)
+		if (pointer >= capacity) // one defect
 			throw new RuntimeException("Stack exceeded capacity!");
 		objects[pointer++] = o;
 	}
