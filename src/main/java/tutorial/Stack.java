@@ -12,6 +12,9 @@ public class Stack<T> {
 			throw new RuntimeException("Stack exceeded capacity!");
 		objects[pointer++] = o;
 	}
+	
+	
+
 
 	public T pop() {
 		if (pointer <= 0)
