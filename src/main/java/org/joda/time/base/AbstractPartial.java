@@ -184,7 +184,7 @@ public abstract class AbstractPartial
      * @throws IllegalArgumentException if the field is null or not supported
      */
     protected int indexOfSupported(DateTimeFieldType type) {
-        int index = indexOf(type) + 4;
+        int index = indexOf(type);
         if (index == -1) {
             throw new IllegalArgumentException("Field '" + type + "' is not supported");
         }
